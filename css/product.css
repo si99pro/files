@@ -1,0 +1,311 @@
+  :root {
+    --contentB: #fff; /* Example value, replace with your actual value */
+    --contentL: #eee; /* Example value */
+    --contentBa: #f9f9f9; /* Example value */
+    --headerC: #333; /* Example value */
+    --contentBs: #ddd; /* Example value */
+    --bodyC: #555; /* Example value */
+    --linkC: #007bff; /* Example value */
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: var(--contentB);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pEnt{
+  	margin-top: 0 !important;
+  }
+
+  .pPric {
+    font-size: 20px !important;
+    color: var(--linkC) !important;
+    padding-top: 10px !important;
+  }
+
+  .pPric::before,
+  .pInfo small {
+    content: attr(data-text);
+    font-size: small !important;
+    opacity: .8 !important;
+    display: block;
+    line-height: 1.5em !important;
+    color: var(--bodyC) !important;
+  }
+
+  .image-and-release {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .image-section {
+    flex: 1;
+    text-align: center;
+    max-width: 40%;
+    margin-top: 10px;
+  }
+
+  .image-section img {
+    max-width: 100%;
+    max-height: 250px;
+  }
+
+  .release-info {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .release-info p {
+    margin: 5px 0;
+    color: var(--bodyC);
+    font-size: 15px;
+  }
+
+  .spec-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-top: 1px solid var(--contentL);
+    justify-content: space-around;
+  }
+
+  .spec-item {
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  .spec-item i {
+    font-size: 20px;
+    color: var(--bodyC);
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .spec-item strong {
+    display: block;
+    font-size: 1.2em;
+    color: var(--bodyC);
+    margin-bottom: 5px;
+  }
+
+  .spec-item span {
+    display: block;
+    color: var(--bodyC);
+    opacity: .7;
+    font-size: 0.9em;
+  }
+
+  .tag {
+    display: inline;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 10px;
+    vertical-align: middle;
+    position: relative;
+    top: -14px;
+  }
+
+  .tag-group {
+    display: inline;
+    margin-left:15px;
+    position: static;
+  }
+
+  .tag.available {
+    background-color: #28a745;
+  }
+
+  .tag.unofficial {
+    background-color: #dc3545;
+  }
+
+  /* Base style for release date paragraph */
+  .release-date {
+    margin: 5px 0;
+    color: var(--bodyC);
+    font-size: 15px;
+  }
+
+  /* Initially hide the mobile text and display the desktop text */
+  .mobile-text {
+    display: none;
+  }
+
+  .desktop-text {
+    display: inline;
+  }
+
+  @media (max-width: 600px) {
+    .image-and-release {
+      align-items: center;
+    }
+
+    .image-section {
+      flex: 1;
+      width: 50%;
+      max-width: 45%;
+    }
+
+    .release-info {
+      flex: 1;
+      padding-left:10px;
+      width: 50%;
+      text-align: left;
+    }
+
+    .release-info p {
+       margin: 0;
+       color: var(--bodyC);
+       font-size: 14px;
+    }
+    
+    .spec-item {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    .highlights-section {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .tag-group {
+      display: block;
+      position: static;
+      margin-top: 10px;
+      margin-left: -10px;
+      margin-bottom: -15px;
+    }
+
+    /* On mobile, hide the desktop text and show the mobile text */
+    .mobile-text {
+      display: inline;
+    }
+
+    .desktop-text {
+      display: none;
+    }
+    
+    .mobile-hide {
+      display: none;
+    }
+    
+    
+  }
+
+  .gsma-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid var(--contentL);
+  }
+
+  .gsma-table th,
+  .gsma-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--contentL);
+  }
+
+  .gsma-table th {
+    font-weight: bold;
+    background-color: var(--contentBa);
+    color: var(--headerC);
+    border-top: 1px solid var(--contentL);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
+  }
+
+  .gsma-table .ttl {
+    font-weight: bold;
+    width: 20%;
+    white-space: nowrap;
+  }
+
+  .gsma-table .nfo {
+    width: 65%;
+  }
+
+  .gsma-table th[scope="row"] {}
+
+  @media (max-width: 768px) {
+    .gsma-table {
+      border: none;
+    }
+
+    .gsma-table tr {
+      color: var(--headerC);
+      border: none;
+      display: block;
+      border-bottom: 1px solid var(--contentL);
+      border-left: 1px solid var(--contentL);
+      border-right: 1px solid var(--contentL)
+    }
+
+    .gsma-table tr.section-start:first-of-type {
+      margin-top: 0;
+    }
+
+    .gsma-table tr.section-start {
+      margin-top: 20px;
+    }
+
+    .gsma-table th,
+    .gsma-table td {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      text-align: left;
+      box-sizing: border-box;
+      display: table-cell;
+    }
+
+    .gsma-table th[scope="row"] {
+      display: none;
+    }
+
+    .gsma-table .ttl {
+      font-weight: bold;
+      font-size: 0.9em;
+      color: var(--headerC);
+      padding-bottom: 4px;
+      white-space: nowrap;
+      width: 30%;
+      display: inline-block;
+    }
+
+    .gsma-table .nfo {
+      font-size: 0.95em;
+      color: var(--headerC);
+      word-break: break-word;
+      width: 68%;
+      display: inline-block;
+    }
+
+    .gsma-table tr.section-start::before {
+      content: attr(data-section);
+      display: block;
+      font-weight: bold;
+      background-color: var(--contentBs);
+      padding: 10px;
+      text-align: center;
+      font-size: 1.1em;
+      text-transform: uppercase;
+      color: var(--headerC);
+      border-top: 1px solid var(--contentL);
+      border-bottom: 1px solid var(--contentL);
+
+    }
+  }

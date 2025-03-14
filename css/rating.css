@@ -1,0 +1,37 @@
+  .rating-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .star {
+            cursor: pointer;
+            font-size: 15px; /* Adjust size as needed */
+            margin-right: 5px; /* Space between stars */
+            color: #ccc; /* Default star color (empty) */
+        }
+
+        .star.filled i.fas {
+            color: gold; /* Change this to the color you want for filled stars */
+        }
+
+        .star:hover ~ .star i.far {
+            color: #ccc; /* Keep unhovered stars empty */
+        }
+
+       .star:hover i.far,
+        .star:hover ~ .star i.far {
+            color: #ccc;
+        }
+
+        .star:hover i.far,
+        .star:hover ~ .star.filled i.fas {
+            color: gold; /* Highlight the filled stars on hover */
+        }
+       .star:hover i.far {
+           transition: color 0.3s;
+
+       }
+      .star.disabled {
+        pointer-events: none; /* Disable clicks */
+        opacity: 0.5;       /* Visually indicate disabled state */
+      }

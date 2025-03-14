@@ -163,7 +163,7 @@
     }
 
     .release-info p {
-       margin: 0;
+       margin: 1px 0;
        color: var(--bodyC);
        font-size: 14px;
     }

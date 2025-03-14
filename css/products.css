@@ -297,7 +297,7 @@
       content: attr(data-section);
       display: block;
       font-weight: bold;
-      background-color: var(--contentBs);
+      background-color: var(--contentBa);
       padding: 5px;
       text-align: center;
       font-size: 15px;

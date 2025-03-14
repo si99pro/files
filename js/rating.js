@@ -1,4 +1,4 @@
-      // Assuming Firebase is initialized as shown above.
+ // Assuming Firebase is initialized as shown above.
 
       function getPostId() {
         const postElement = document.querySelector('article.ntry.ps.post'); // More specific selector
@@ -34,9 +34,11 @@
             stars.forEach((star, index) => {
                 const icon = star.querySelector('i');
                 if (index < rating) {
+                  star.classList.add('filled');
                     icon.classList.remove('far');
                     icon.classList.add('fas');
                 } else {
+                  star.classList.remove('filled');
                     icon.classList.remove('fas');
                     icon.classList.add('far');
                 }
@@ -175,5 +177,5 @@
       //Initial setup on page load
       if(hasVoted) {
           disableStars();
-          voteMessage.textContent = "Thanks for voting!";
+          voteMessage.textContent = "Thanks for rating!";
       }

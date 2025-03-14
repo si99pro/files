@@ -286,7 +286,7 @@
     }
 
     .gsma-table .nfo {
-      font-size: 0.95em;
+      font-size: 14px;
       color: var(--headerC);
       word-break: break-word;
       width: 68%;

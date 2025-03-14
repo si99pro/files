@@ -299,9 +299,9 @@
       display: block;
       font-weight: bold;
       background-color: var(--contentBs);
-      padding: 10px;
+      padding: 5px;
       text-align: center;
-      font-size: 1.1em;
+      font-size: 15px;
       text-transform: uppercase;
       color: var(--headerC);
       border-top: 1px solid var(--contentL);

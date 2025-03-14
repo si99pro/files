@@ -182,9 +182,9 @@
     .tag-group {
       display: block;
       position: static;
-      margin-top: 10px;
+      margin-top: 12px;
       margin-left: -10px;
-      margin-bottom: -15px;
+      margin-bottom: -12px;
     }
 
     /* On mobile, hide the desktop text and show the mobile text */

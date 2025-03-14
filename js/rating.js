@@ -98,7 +98,7 @@
                 localStorage.setItem(`voted_${postId}`, 'true');
                 hasVoted = true;  // Update local variable.
                 disableStars(); // Disable stars after voting
-                voteMessage.textContent = "Thanks for voting!";
+                voteMessage.textContent = "Thanks for rating!";
 
 
                 console.log('Rating submitted!');

@@ -265,7 +265,7 @@
     .gsma-table th,
     .gsma-table td {
       width: 100%;
-      padding: 8px;
+      padding: 5px;
       border: none;
       text-align: left;
       box-sizing: border-box;
@@ -278,9 +278,8 @@
 
     .gsma-table .ttl {
       font-weight: bold;
-      font-size: 0.9em;
+      font-size: 15px;
       color: var(--headerC);
-      padding-bottom: 4px;
       white-space: nowrap;
       width: 30%;
       display: inline-block;
